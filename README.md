@@ -1,2 +1,4 @@
 # TransformationDemo
-使用3D仿射变换实现类似智联招聘APP的直约面试动画效果
+使用3D仿射变换实现类似智联招聘APP的直约面试动画效果；
+参照UITableView实现cell的重用；
+使用FBMemoryProfiler检测内存使用情况。
