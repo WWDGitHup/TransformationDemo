@@ -1,0 +1,8 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Aspects" "${PODS_ROOT}/Headers/Public/FBAllocationTracker" "${PODS_ROOT}/Headers/Public/FBMemoryProfiler" "${PODS_ROOT}/Headers/Public/FBRetainCycleDetector" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/SDWebImage"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Aspects" "$PODS_CONFIGURATION_BUILD_DIR/FBAllocationTracker" "$PODS_CONFIGURATION_BUILD_DIR/FBMemoryProfiler" "$PODS_CONFIGURATION_BUILD_DIR/FBRetainCycleDetector" "$PODS_CONFIGURATION_BUILD_DIR/Masonry" "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Aspects" -isystem "${PODS_ROOT}/Headers/Public/FBAllocationTracker" -isystem "${PODS_ROOT}/Headers/Public/FBMemoryProfiler" -isystem "${PODS_ROOT}/Headers/Public/FBRetainCycleDetector" -isystem "${PODS_ROOT}/Headers/Public/Masonry" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Aspects" -l"FBAllocationTracker" -l"FBMemoryProfiler" -l"FBRetainCycleDetector" -l"Masonry" -l"SDWebImage" -l"c++" -framework "CoreGraphics" -framework "Foundation" -framework "ImageIO" -framework "UIKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods
